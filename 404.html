@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Card</title>
+</head>
+<body>
+
+    <div class="tittle">
+        <h1>Ancient gods returning to the new age</h1>
+    </div>
+
+    <div class="container">
+
+            <div class="card">
+                <div class="content">
+                    <img src="./imgs/yu-gi-oh-egyptian-gods-cards3.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <img src="./imgs/yu-gi-oh-egyptian-gods-cards.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <img src="./imgs/yu-gi-oh-egyptian-gods-cards2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="fother">
+                <h2>Coming now</h2>
+            </div>
+    </div>
+
+
+    <div class="konami">
+        <img src="./imgs/Konami_logo.jpg" alt="">
+    </div>
+
+    
+    <script src="./vanilla-tilt.js"></script>  
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max:25,
+            speed:400,
+            glare:true,
+            "max-glare":1,
+        });
+      </script>
+</body>
+</html>

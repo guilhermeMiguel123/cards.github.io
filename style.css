@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://www.yugioh-card.com/eu/wp-content/uploads/2022/09/OTS-hero-banner-v02.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex; /* Coloca as imagens uma ao lado da outra */
+    justify-content: space-between; /* Distribui o espaço igualmente entre as imagens */
+    position: relative;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+
+
+.container img {
+    max-width: 350px;
+    max-height: 350px;
+    width: auto;
+    height: auto;
+    -webkit-box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.card {
+    flex: 1; /* Ocupa a mesma largura para cada imagem */
+    margin-right: 80px; /* Espaço entre as imagens */
+    
+}
+
+.tittle{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 70px;
+    font-size:25px;
+    text-align: center; /* Centralize o texto */
+    font-weight: bold;
+    background-image: url(data:image/jpeg;base64,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);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 20s ease alternate infinite;
+}
+
+@keyframes text {
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 100% 50%;
+    }
+
+}
+
+
+.fother{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    margin-top: 425px;
+    left: 0;
+    width: 100%;
+    font-size:25px;
+    text-align: center; /* Centralize o texto */
+    font-weight: bold;
+   background-image: url(data:image/jpeg;base64,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);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: text 20s ease alternate infinite;
+}
+
+
+.konami{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 30px;
+    -webkit-box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 32px 14px 5px 0px rgba(0,0,0,0.75);
+}
+
